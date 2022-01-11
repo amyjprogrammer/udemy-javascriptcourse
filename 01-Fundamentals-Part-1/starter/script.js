@@ -275,3 +275,119 @@ const isTired = false;
 console.log(hasGoodVision && hasDriversLicense && !isTired)
 */
 
+/*
+//Coding challenge
+// const dScore1 = 96;
+// const dScore2 = 108;
+// const dScore3 = 89;
+// const kScore1 = 88;
+// const kScore2 = 91;
+// const kScore3 = 110;
+
+// const dScore1 = 97;
+// const dScore2 = 112;
+// const dScore3 = 101;
+// const kScore1 = 109;
+// const kScore2 = 95;
+// const kScore3 = 123;
+
+const dScore1 = 97;
+const dScore2 = 112;
+const dScore3 = 101;
+const kScore1 = 109;
+const kScore2 = 95;
+const kScore3 = 106;
+
+const averageDolphinScore = (dScore1 + dScore2 + dScore3) / 3;
+const averageKoalaScore = (kScore1 + kScore2 + kScore3) / 3;
+
+if(averageKoalaScore < 100 && averageDolphinScore < 100){
+    console.log("No winner. 🤷‍♀️");
+} else if(averageKoalaScore === averageDolphinScore){
+    console.log("The teams tied 👍");
+} else if(averageKoalaScore > averageDolphinScore){
+    console.log("Koala wins the trophy" );
+} else {
+    console.log("Dolphins win the trophy");
+}
+*/
+
+/*
+//Switch statement
+const day = "Saturday";
+
+switch(day){
+    case "Monday": //day === 'Monday'
+        console.log("Plan course structure");
+        console.log("Switch case");
+        break;
+    case 'Tuesday':
+        console.log('Prepare videos');
+        break;
+    case 'Wednesday':
+    case 'Thursday':
+        console.log("Write code examples");
+        break;
+    case 'Friday':
+        console.log("Record videos");
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        console.log('Enjoy the weekend!');
+        break;
+    default:
+        console.log("Not a valid day.");
+}
+
+if (day === "Monday"){
+    console.log("Plan course structure");
+    console.log("Switch case");
+} else if (day === "Tuesday"){
+    console.log('Prepare videos');
+} else if(day === "Wednesday" || day === "Thursday"){
+    console.log("Write code examples");
+} else if(day === "Friday"){
+    console.log("Record videos");
+} else if(day === "Saturday" || day === "Sunday"){
+    console.log('Enjoy the weekend!');
+} else{
+    console.log("Not a valid day.");
+}
+*/
+
+/*
+//Statements and Expressions
+//Expressions produce a value..examples below
+3 + 4
+1991
+true && false
+//Statements are actions
+if(23 > 10){
+    const str = '23 is bigger';
+}
+*/
+
+/*
+//Conditional(Ternary)
+const age = 25;
+// age >= 21 ? console.log('I like to drink wine. 🍷') : console.log('I like to drink water. 💦');
+
+const drink = age >= 21 ? 'wine 🍷' : 'water 💦';
+console.log(drink);
+
+let drink2;
+if(age >= 21){
+    drink2 = 'wine 🍷';
+} else {
+    drink2 = 'water 💦';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 21 ? 'wine 🍷' : 'water 💦'}`);
+console.log(`I like to drink ${drink}`);
+*/
+
+//Coding challenge
+const bill = 400;
+const tip = bill >= 50 && bill <= 300 ? .15 * bill : .20 * bill;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip}`);
