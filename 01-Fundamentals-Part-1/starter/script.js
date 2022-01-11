@@ -178,3 +178,100 @@ else {
 }
 */
 
+/*
+//Type Conversion 
+const inputYear = '1995';
+console.log(inputYear + 18);// shows 199518
+console.log(Number(inputYear) + 18, inputYear);
+
+console.log(Number('John'));//gives Nan..means invalid number
+console.log(typeof Nan);
+
+console.log(String(23), 23);
+
+//Coercion
+console.log('I am ' + 23 + ' years old');//converts 23 to a string
+console.log('23' - '10' - 3);//gives 10...converts to a number
+console.log('23' + '10' + 3); //23103..converts to a string
+console.log('23' / '2');//converts to a number..10.5
+
+let n = '1' + 1; //results 11 string
+n = n - 1; //converts to number and results in 10
+console.log(n);
+
+let rando = 2 + 3 + 4 + '5'; //is 95 as a string
+*/
+
+//falsy values: 0, '', undefined, null, NaN
+
+/*
+console.log(Boolean(0));//false
+console.log(Boolean(undefined)); //false
+console.log(Boolean('Amy')); //true
+console.log(Boolean({}));//empty object- true
+
+const money = 0;// shows second one
+
+if(money){
+    console.log("Don't spend it all");
+}
+else{
+    console.log('You should get a job.')
+}
+
+let height;
+if(height){
+    console.log("Height is defined");
+}
+else{
+    console.log("Height is undefined");
+}
+*/
+
+/*
+//Equality operators === or ==
+const age = 18;
+if(age === 18){
+    console.log('You are of age.');
+}
+
+//=== strict operator, both values have to be exactly the same
+
+if('18' == 18) console.log('same');
+
+const favorite = Number( prompt("What is your favorite number?"));
+console.log(favorite);
+console.log(typeof favorite);
+
+if(favorite === 23){
+    console.log('Cool! 23 is an amazing number!')
+} else if(favorite === 24){
+    console.log('24 is also an awesome number');
+}else {
+    console.log("Really")
+}
+
+if(favorite !== 24) console.log("Why not?");
+*/
+
+/*
+//Boolean logic
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);//and
+console.log(hasDriversLicense || hasGoodVision);//or
+console.log(!hasGoodVision);
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if(shouldDrive) console.log('Sarah is able to drive.');
+else {
+    console.log("Somone else should drive.")
+}
+
+const isTired = false;
+
+console.log(hasGoodVision && hasDriversLicense && !isTired)
+*/
+
