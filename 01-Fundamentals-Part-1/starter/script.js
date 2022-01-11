@@ -105,3 +105,76 @@ johnBMI = johnWeight / johnHeight ** 2;
 let markHigherBMI = markBMI > johnBMI;
 console.log(markHigherBMI);
 */
+
+/*
+//Strings
+const firstName = "Amy";
+const lastName = "Jones";
+const job = "Front End Engineer";
+const birthYear = 1977;
+const year = 2022;
+
+//template literals
+const amy = "I'm " + firstName + ", a " + (year - birthYear) + ' year old ' + job;
+
+console.log(amy);
+
+const amyNew = `I'm ${firstName} ${lastName}, a ${year - birthYear} year old ${job}`;
+console.log(amyNew);
+
+console.log(`string with \n\
+multiple \n\
+lines`);
+
+console.log(`string 
+multiple
+lines`); //same result as before
+*/
+
+/*
+//if else
+const age = 13;
+const isOldEnough = age >= 16;
+
+if(isOldEnough){
+    console.log('You can start getting your license. 😊')//emojis with window + .
+}
+else{
+    const yearsLeft = 16 - age;
+    console.log(`No luck 🐱‍👤.  Wait another ${yearsLeft} years.`);
+}
+
+const birthYear = 1977;
+let century;
+if(birthYear <= 2000){
+    century = 20;
+}
+else{
+    century = 21;
+}
+console.log(century);
+*/
+
+/*
+//Coding challenge
+// let markWeight = 95;
+// let markHeight = 1.88;
+// let johnWeight = 85;
+// let johnHeight = 1.76;
+
+let markWeight = 95;
+let markHeight = 1.88;
+let johnWeight = 82;
+let johnHeight = 1.76;
+
+markBMI = markWeight / markHeight ** 2;
+johnBMI = johnWeight / johnHeight ** 2;
+
+if(markBMI > johnBMI){
+    console.log(`Mark's BMI (${markBMI.toFixed(2)}) is higher than John's (${johnBMI.toFixed(2)})!`)
+}
+else {
+    console.log(`John's BMI (${johnBMI.toFixed(2)} is higher than Mark's (${markBMI.toFixed(2)}))`)
+}
+*/
+
