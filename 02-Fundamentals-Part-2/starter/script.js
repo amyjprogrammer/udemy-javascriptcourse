@@ -192,6 +192,7 @@ console.log(friends.includes('John'));//shows false
 if(friends.includes('David')) console.log("You have a friend called David");
 */
 
+/*
 //Coding challenge
 // const calcTip = bill => (bill >= 50 && bill <=300) ? bill * .15 : bill * .20;
 //also write as 
@@ -207,8 +208,115 @@ function calcTip (bill){
 const bills = [125, 500, 44];
 
 const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
-const total = [calcTip(bills[0]) + bills[0], calcTip(bills[1]) + bills[1], calcTip(bills[2]) + bills[2]];
+const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 
 console.log(tips);
 console.log(total);
+*/
 
+/*
+//Objects
+const amy = {
+    firstName : 'Amy',
+    lastName : 'Jones',
+    age : 2022 - 1977,
+    job : 'Front End Engineer',
+    friends : ['David', 'Barb', 'Krystle']
+};
+
+console.log(amy);
+console.log(amy.lastName);
+console.log(amy['lastName']);
+
+const nameKey = 'Name';
+console.log(amy['first' + nameKey]);
+console.log(amy['last' + nameKey]);
+
+// const interestedIn = prompt('What do want to know about Amy? Choose between firstName, lastName, age, job or friends');
+// console.log(interestedIn);
+
+// if(amy[interestedIn]){
+//     console.log(amy[interestedIn]);
+// } else {
+//     console.log('Wrong request!')
+// }
+
+amy.location = 'Indianapolis';
+amy['twitter'] = 'somethingemail.com';
+console.log(amy);
+
+//Challenge
+console.log(`${amy.firstName} has ${amy.friends.length} friends, and the best friend is called ${amy.friends[0]}`)
+*/
+
+/*
+//Object methods
+const amy = {
+    firstName : 'Amy',
+    lastName : 'Jones',
+    birthYear : 1977,
+    job : 'Front End Engineer',
+    friends : ['David', 'Barb', 'Krystle'],
+    hasDriversLicense : true,
+
+    // calcAge: function(birthYear){
+    //     return 2022 - birthYear;
+    // }
+    // calcAge: function(){
+    //     return 2022 - this.birthYear;
+    // }
+    calcAge: function(){
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+
+    // calcDriversLic: function(){
+    //     if(this.hasDriversLicense == true){
+    //         return "has driver's License"
+    //     } else {
+    //         return "doesn't have a driver's license"
+    //     }
+    // }
+
+    calcSummary: function(){
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and she has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`;
+    }
+};
+
+console.log(amy.calcAge());
+console.log(amy.age);
+// console.log(amy['calcAge'](amy.birthYear));
+
+//Challenge
+// console.log(`${amy.firstName} is a ${amy.age}-year old ${amy.job}, and she ${amy.calcDriversLic()}`);
+console.log(amy.calcSummary());
+*/
+
+/*
+//another challenge
+const mike = {
+    fullName : "Mark Miller",
+    mass : 78,
+    height : 1.69,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height ** 2)
+        return this.bmi;
+    }
+};
+
+const john = {
+    fullName : 'John Smith',
+    mass : 92,
+    height : 1.95,
+    calcBMI: function() {
+        this.bmi = this.mass / (this.height ** 2)
+        return this.bmi;
+    }
+};
+
+if (mike.calcBMI() > john.calcBMI()){
+    console.log(`${mike.fullName}'s BMI (${mike.bmi.toFixed(2)}) is higher than ${john.fullName} (${john.bmi.toFixed(2)})`);
+} else {
+    console.log(`${john.fullName}'s BMI (${john.bmi.toFixed(2)}) is higher than ${mike.fullName} (${mike.bmi.toFixed(2)})`);
+}
+*/
