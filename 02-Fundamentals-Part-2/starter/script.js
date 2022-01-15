@@ -320,3 +320,28 @@ if (mike.calcBMI() > john.calcBMI()){
     console.log(`${john.fullName}'s BMI (${john.bmi.toFixed(2)}) is higher than ${mike.fullName} (${mike.bmi.toFixed(2)})`);
 }
 */
+
+/*
+//Loops
+for(let rep = 1; rep<=10; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+}
+
+for(let rep = 5; rep<=10; rep++){
+    console.log(`Lifting weights repetition ${rep}`);
+}
+*/
+
+const amy = [
+    'Amy',
+    'Jones',
+    2022 - 1977,
+    'Front End Engineer',
+    ['David', 'Barb', 'Krystle']
+];
+
+
+for(let i = 0; i < 5; i++){
+    console.log(amy[i]);
+}
+
