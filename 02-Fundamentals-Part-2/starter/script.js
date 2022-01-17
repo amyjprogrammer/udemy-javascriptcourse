@@ -337,11 +337,16 @@ const amy = [
     'Jones',
     2022 - 1977,
     'Front End Engineer',
-    ['David', 'Barb', 'Krystle']
+    ['David', 'Barb', 'Krystle'],
+    true
 ];
 
+const types = [];
 
-for(let i = 0; i < 5; i++){
-    console.log(amy[i]);
+for(let i = 0; i < amy.length; i++){
+    console.log(amy[i], typeof amy[i]);
+    types[i] = typeof amy[i];
 }
+
+console.log(types);
 
