@@ -332,6 +332,7 @@ for(let rep = 5; rep<=10; rep++){
 }
 */
 
+/*
 const amy = [
     'Amy',
     'Jones',
@@ -345,8 +346,61 @@ const types = [];
 
 for(let i = 0; i < amy.length; i++){
     console.log(amy[i], typeof amy[i]);
-    types[i] = typeof amy[i];
+
+    // types[i] = typeof amy[i];
+
+    types.push(typeof amy[i]);
 }
 
 console.log(types);
+
+const years = [1995, 1977, 2015];
+const ages = [];
+
+for(let i = 0; i < years.length; i++){
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+
+//continue and break
+console.log("---ONLY STRINGS---")
+for(let i = 0; i < amy.length; i++){
+    if(typeof amy[i] !== 'string') continue;
+    console.log(amy[i]);
+
+}
+
+console.log("---Break with number---")
+for(let i = 0; i < amy.length; i++){
+    if(typeof amy[i] === 'number') break;
+    console.log(amy[i]);
+
+}
+*/
+
+//looping backwards
+const amy = [
+    'Amy',
+    'Jones',
+    2022 - 1977,
+    'Front End Engineer',
+    ['David', 'Barb', 'Krystle'],
+    true
+];
+
+for(let i = amy.length - 1; i >= 0; i--){
+    console.log(amy[i]);
+}
+
+//loop inside a loop
+
+for(let exercise = 1; exercise < 4; exercise++){
+    console.log(`Starting exercise ${exercise}`);
+
+    for(let rep = 1; rep < 6; rep++){
+        console.log(`Lifting weight repetition ${rep}`);
+    }
+}
 
